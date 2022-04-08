@@ -1,9 +1,60 @@
 <!DOCTYPE html>
 <html>
     <head>
-<meta charset="UTF-8">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
-    <body>
-        <h1>Hello World!</h1>
+    <body> 
+        <script src="form.js"></script>
+
+        <div class="container">
+            <form>
+                <div class="box1">
+                <label for="fname">Firstname:</label>
+                <input type="text" id="fname" name="fname" placeholder="Firstname">
+
+                <label for="lname">Lastname:</label>
+                <input type="text" id="lname" name="lname" placeholder="Lastname">
+            </div>
+              <div class="box2">
+                <label for="pnumber">Phone number:</label>
+                <input type="tel" id="pnumber" name="pnumber" placeholder="Phone number">
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="City">
+
+                <input type="button" class="button-primary" onclick="contact(name)" value="Add contact">
+            </div>
+
+                
+            </form>    
+            <table id="table" class="table">
+                <tr>
+                   <th>Firstname</th>
+                   <th>Lastname</th>
+                   <th>Phone number</th>
+                   <th>City</th>
+                </tr>
+                <tr>
+                   <td>Carina</td>
+                   <td>Larsson</td>
+                   <td>555 77 99 88</td>
+                   <td>Gotenburg</td>
+                </tr>
+                <tr>
+                   <td>Louise</td>
+                   <td>Andersson</td>
+                   <td>555 88 44 33</td>
+                   <td>Stockholm</td>
+                </tr>
+                <tr>
+                   <td>Lisa</td>
+                   <td>Karlsson</td>
+                   <td>555 22 55 77</td>
+                   <td>Malmo</td>
+                </tr>
+            </table>
+        </div>
     </body>
 </html>
